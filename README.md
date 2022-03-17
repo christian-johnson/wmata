@@ -1,4 +1,4 @@
-# WMATA Servide Disruption: Data and Analysis
+# WMATA Service Disruptions: Data and Analysis
 
 The Washington Metropolitan Area Transit Authority (WMATA), a.k.a. Metro, runs the Washington DC local metrorail and bus service. 
 WMATA makes available a daily log of service disruptions on their [website](https://www.wmata.com/service/daily-report/), which is available in plain HTML. 
