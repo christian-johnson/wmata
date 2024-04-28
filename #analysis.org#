@@ -1,0 +1,22 @@
+#+BEGIN_SRC jupyter-python :session *Python* :display image/png :results file :export both :comments link
+  %matplotlib inline
+  import matplotlib.pyplot as plt
+  import numpy as np
+  plt.style.use('dark_background')
+  plt.hist(np.random.randn(1000))
+  plt.show()
+#+END_SRC
+
+#+RESULTS:
+[[file:./.ob-jupyter/973af78688d86ff55261531a16c41f1dddff3c81.png]]
+
+
+#+BEGIN_SRC jupyter-python :session *Python* :export both :tangle yes :results file
+  fig = plt.figure(figsize = [8,8])
+  matplotlib.use('Agg')
+
+  plt.hist(np.random.randn(1000))
+  plt.show()
+  plt.arrow
+
+#+END_SRC

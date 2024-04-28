@@ -1,0 +1,76 @@
+#+BEGIN_SRC ipython :session *Python* :export both :comments link :results raw drawer
+  %matplotlib inline
+  import matplotlib.pyplot as plt
+  import numpy as np
+  plt.style.use('dark_background')
+  
+#+END_SRC
+
+#+RESULTS:
+:results:
+# Out [1]: 
+:end:
+#+BEGIN_SRC ipython :session *Python* :export both :comments link :results raw drawer
+  plt.hist(np.random.randn(2000), bins = 200)
+  plt.show()
+ 
+#+END_SRC
+
+#+RESULTS:
+:results:
+# Out [2]: 
+# text/plain
+: <Figure size 432x288 with 1 Axes>
+
+# image/png
+[[file:obipy-resources/44546d386f8fff8b623b31b79f006df3b36d43d6/cc542e2a4d62e7f5a00dfb1fc8025392c3b28265.png]]
+:end:
+#+BEGIN_SRC python :session *Python* :export both :comments link :results output
+  
+
+#+END_SRC
+
+#+RESULTS:
+
+#+BEGIN_SRC ipython :session *Python* :export both :comments link :results value
+  print('Hello world!')
+
+  %matplotlib inline
+  import matplotlib.pyplot as plt
+  import numpy as np
+
+  x = np.linspace(0, 20 * np.pi, 200)
+  y = np.exp(-0.1 * x) * np.sin(x)
+  plt.plot(x, y)
+  plt.xlabel('x')
+  plt.ylabel('y')
+  plt.title('Decaying sin wave')
+
+  # new plot
+  plt.figure()
+  y2 = np.exp(-0.1 * x) * np.cos(x)
+  plt.plot(x, y2)
+  plt.xlabel('x')
+  plt.ylabel('y')
+  plt.title('Decaying cosine')
+  plt.show()
+#+END_SRC
+
+#+RESULTS:
+:results:
+# Out [4]: 
+# output
+Hello world!
+
+# text/plain
+: <Figure size 432x288 with 1 Axes>
+
+# image/png
+[[file:obipy-resources/44546d386f8fff8b623b31b79f006df3b36d43d6/55dd4945be96cf94f3c18a4af83dffd24522b045.png]]
+
+# text/plain
+: <Figure size 432x288 with 1 Axes>
+
+# image/png
+[[file:obipy-resources/44546d386f8fff8b623b31b79f006df3b36d43d6/96ed346078bd8aa9517173c0a88a8c47d4a92c91.png]]
+:end:

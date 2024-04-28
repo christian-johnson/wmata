@@ -1,0 +1,19 @@
+#+BEGIN_SRC jupyter-python :session *Python* :tangle /home/christian/projects/wmata/wmata.py :file /home/christian/projects/wmata/wmata.py :export both :comments link :results raw drawer
+import matplotlib.pyplot as plt
+import numpy as np
+
+#+END_SRC
+
+#+RESULTS:
+:results:
+:end:
+
+
+#+BEGIN_SRC jupyter-python :session *Python* :export both :tangle yes :results file
+  fig = plt.figure(figsize = [8,8])
+  matplotlib.use('Agg')
+
+  plt.hist(np.random.randn(1000))
+  plt.show()
+
+#+END_SRC
